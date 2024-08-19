@@ -1,0 +1,60 @@
+body {
+  background-image: url(/Estudosaula/_img/japao.jpg);
+  background-attachment: fixed;
+}
+#tab1 {
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  th {
+    background-color: #7b0200;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  td {
+    background-color: lightgray;
+  }
+}
+img {
+  width: 275px;
+  height: 175px;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ea7678;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+hr {
+  border: 7px solid #ea7678;
+}
+#tb2 {
+  text-align: right;
+  margin: auto;
+  width: 50%;
+  td,
+  th {
+    border: 3px solid lightyellow;
+  }
+  td {
+    background-color: lightgray;
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  background-color: lightgray;
+}
+
+h2 {
+  text-shadow: 1px 1px black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+}
+
+button {
+  color: red;
+  text-shadow: 0px 1px 1px black;
+}
