@@ -1,0 +1,39 @@
+body{
+    background-image: url(/Estudosaula/_img/R.png);
+    background-size: 40%;
+background-position: center top;
+   background-repeat: no-repeat;
+   background-color: lightslategray;
+}
+p{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#img1{
+ border: 6px solid gold;
+ aspect-ratio: 1/1;
+ width: 15%;
+ border-radius: 50%;
+}
+div{
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    
+}
+#img2{
+    background-position: bottom;
+    width: 500px;
+    height: 200px;
+    
+}
+th{
+    background-color: gold;
+    text-align: center;
+    margin: auto;
+}
+  
