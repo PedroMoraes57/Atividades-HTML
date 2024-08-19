@@ -1,0 +1,16 @@
+h1 {
+  background-color: aqua;
+}
+h2 {
+  background-color: darkorange;
+}
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMRbpy-A5k0SoTi0sP64I-El4oEwasgHQvEQ&s");
+  background-size: 20%;
+  /*podemos usar o repeat-x para repetir em uma linha horizontal e o repeat-y em uma linha vertical, já o no-repeat ele insere a imagem apenas uma vez sem repetições*/
+  background-repeat: no-repeat;
+  /*Aqui colocamos a posição no qual queremos a imagem*/
+  background-position: right bottom;
+  /*Especifica se a imagem de fundo deve ser rolada ou não*/
+  background-attachment: fixed;
+}
