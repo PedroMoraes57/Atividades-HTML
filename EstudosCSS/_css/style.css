@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+}
+h1 {
+  font-family: Verdana;
+}
+.sem {
+  border: 10px solid black;
+}
+
+.com {
+  border: solid 10px black;
+  color: white;
+  height: 1px;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+#css {
+  color: salmon;
+  font-family: verdana;
+}
+p {
+  font-family: Verdana;
+  font-size: 13px;
+}
+#azul {
+  font-family: Verdana;
+  background-color: lightskyblue;
+  font-weight: bold;
+}
+#rosa {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  color: magenta;
+}
+#bords {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  border: solid #808000;
+}
+#verde {
+  border: solid #808000;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+#grandao {
+  color: salmon;
+  background-color: blueviolet;
+  font-size: 50px;
+}
