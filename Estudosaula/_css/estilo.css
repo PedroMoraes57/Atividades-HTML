@@ -1,17 +1,22 @@
+*{
+    margin: 0px;
+}
 body{
     background-image: url(/Estudosaula/_img/R.png);
-    background-size: 40%;
+    background-size: 45%;
 background-position: center top;
    background-repeat: no-repeat;
-   background-color: lightslategray;
+   background-color: #333333;
 }
 p{
     color: gold;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 h1{
     color: blue;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px 3px black;
 }
 #img1{
  border: 6px solid gold;
@@ -20,20 +25,37 @@ h1{
  border-radius: 50%;
 }
 div{
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgb(0, 0, 0,0.5);
     text-align: center;
+   height:420px;
     
 }
 #img2{
     background-position: bottom;
-    width: 500px;
-    height: 200px;
+    width: 400px;
+    height: 150px;
+    float: right;
     
 }
 th{
     background-color: gold;
     text-align: center;
     margin: auto;
+}
+table, th, td{
+    text-align: center;
+    margin: auto;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid blue;
+    border-spacing: 0px;
+    height: 35px;
+}
+td{
+    color: white;
+    
+}
+table{
+    background-color: #333333;
 }
   
