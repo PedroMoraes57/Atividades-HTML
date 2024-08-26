@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario Superaçaiajin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/Superaçaiajin/_css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>FORMULARIO SUPERAÇAIAJIN</h1>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="name">Nome:</label> <br>
+            <input type="text" name="nome"> <br><br>
+            <label for="Idade">Idade:</label> <br>
+            <input type="text" name="idade" id=""><br><br>
+            <label for="Telefone">Telefone:</label> <br>
+            <input type="tel" name="telefone"><br><br>
+            <label for="endereço">Endereço:</label> <br>
+            <input type="text" name="endereço"><br><br>
+            <label for="Planta de Origem">Planeta de Origem:</label><br>
+            <select name="Planetas" id="planetas">
+                <option value="terra">Planeta Terra</option>
+                <option value="namekusei">Planeta Namekusei</option>
+                <option value="vegeta">Planeta Vegeta</option>
+                <option value="planetax">Planeta x</option>
+                <option value="loucura">Loucuraneta</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados extras-</legend>
+            <label for="raças">Raça do Universo 7 preferida:</label>
+            <select name="universoraças" id="raças">
+                <option value="terraqueo">Terráqueo</option>
+                <option value="Saiyajin">Saiyajin.</option>
+                <option value="Namekuseijin">Namekuseijin</option>
+                <option value="Tsufurujin">Tsufurujin</option>
+                <option value="Shin-jin">Shin-jin</option>
+             </select><br>
+             <br>
+             <label for="trabalho">Trabalho:</label>
+             <input type="radio" name="autonomo"> Autonomo
+             <input type="radio" name="Empregado"> Empregado CLT
+             <input type="radio" name="Empresaio"> Empresario
+             <input type="radio" name="TipoGoku"> Tipo Goku
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Seu açai é perfeito de que jeito?</legend>
+            <input type="checkbox" name="puro"> Puro
+            <input type="checkbox" name="banana"> Com Banana
+            <input type="checkbox" name="morango"> Com Morango
+            <input type="checkbox" name="granola"> Com granola
+            <input type="checkbox" name="terra"> Tem gosto de Terra
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Qual o tamanho preferido?</legend>
+            <input type="radio" name="500"> 500ml
+            <input type="radio" name="300"> 300ml
+            <input type="radio" name="100"> 100ml
+            <input type="radio" name="casquinha"> Casquinha
+            <input type="radio" name="naoentendeu"> Qual parte você não entendeu?
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="obsv">Observação</label><br>
+            <textarea name="clienteobservações" placeholder="Escreva suas observações...Eu gosto de açai porque..."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+</body>
+</html>

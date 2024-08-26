@@ -1,3 +1,67 @@
-body{
-background-color: rgba(100%, 71.37%, 75.69%, 0.2);
+#exemplo02{
+    resize: none;
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+#exemplo03 fieldset{
+    border: purple;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#exemplo03 input, textarea, option{
+    color: blue;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+h2, h3{
+    color: darkred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    border: solid 10px darkred;
+    border-radius: 15px;
+}
+#exemplo01 input{
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+#exemplo01 button{
+    padding: 12px;
+    color: black;
+    background-color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 5px solid darkorchid;
+}
+#exemplo04 input{
+    color: red;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid red;
+}
+#exemplo04 input[type=submit]{
+    border-radius: 15px;
+    background-color: black;
+    cursor:pointer;
+}
+#exemplo05 legend{
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+#exemplo05 fieldset{
+    border: solid 5px darkgoldenrod;
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
