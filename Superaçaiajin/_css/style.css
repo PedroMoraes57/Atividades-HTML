@@ -28,16 +28,18 @@ fieldset{
 input[type=text]{
     width: 600px;
     border-radius: 5px;
+    border: solid;
 }
 input[type=tel]{
     width: 600px;
     border-radius: 5px;
+    border: solid;
 }
 #planetas{
     width: 300px;
 }
 label{
-    font-size: 15px;
+    font-size: 10px;
 }
 #raças{
     width: 300px;
@@ -53,4 +55,5 @@ button{
     background-color: #9932cc;
     color: white;
     cursor: pointer;
+    border: solid #9932cc;
 }
