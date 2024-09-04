@@ -1,0 +1,117 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10vh 12vh 68vh 10vh;
+    font-size: 20px;
+}
+aside, nav{
+    border: 1px solid #d7d7d7;
+}
+header{
+    grid-area: header;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+
+    img{
+        width: 200px;
+        height: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        transition: all 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+
+#buto1{
+    margin-left:500px ;
+}
+
+}
+aside{
+    grid-area: aside;
+    text-align: center;
+    padding: 15px;
+    background-color: #f7f7f7;
+    button{
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 5px;
+        border: none;   
+        background-color: #008000; 
+        color: white;
+    }
+    label{
+        font-weight: bold;
+    }
+    input{
+        margin: 15px;
+        padding: 5px;
+    }
+}
+main{
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "img4 img5 img6";
+    justify-content: center;
+    gap: 4vh 6vh;
+    img{
+        margin-top: 20px;
+        width: 450px;
+        height:250px;
+        transition: all 0.3s;
+    }
+    img:hover{
+        transform:scale(1.05);
+        cursor: pointer;
+    }
+}
+footer{
+    grid-area: footer;
+    background-color: #074a71;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav{
+    background-color: #f0f0f0;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        padding: 5px;
+        margin: 5px;
+    }
+    button{
+        padding: 13px;
+    border-radius: 5px;
+    border: none;   
+    background-color: #008000; 
+    color: white;
+    cursor: pointer;
+}
+}

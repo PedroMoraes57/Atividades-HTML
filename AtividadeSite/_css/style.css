@@ -1,0 +1,95 @@
+*{
+    font-family: verdana;
+}
+body{
+    display: flex;
+    background-color: rgba(255, 192, 203, 0.995);
+
+
+}
+aside{
+    background: linear-gradient(45deg, pink, white);
+    height: 100vh;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+    p{
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    img{
+        padding-top: 10px;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+   li{
+    display: flex;
+    float: left;
+    align-items: center;
+    img{
+        width: 35px;
+        height: 35px;
+        margin-left: 20px;
+    }
+   }
+
+}
+header{
+    padding: 10px 0px;
+    background-image: url(/AtividadeSite/_img/porco-divertido-ilustracao-3d_183364-109936\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+    height: 33vh;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+p{
+    font-size: 40px;
+    margin-top: 175px;
+    margin-left: 20px;
+    color: pink;
+    text-shadow: 3px 3px 3px black;
+}
+}
+main{
+    height: auto;
+    margin-left: 10px;
+    justify-content: right;
+    padding: 10px 0px;
+    margin-top: 0px;
+    p{
+        padding: 0px 15px;
+        font-size: 20px;
+        text-indent: 35px;
+        text-align: justify;
+    }
+    a{
+        padding: 0px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+}
+footer{
+    text-align: center;
+    background-image: linear-gradient(to right, white, pink);
+    margin-left: 10px;
+    color: black;
+    margin-top: 10px;
+    padding: 1px;
+    width: 78.7%;
+    height: 5vh;
+    bottom: 0%;
+    position: absolute;
+    p{
+        margin-top: 5px;
+    }
+
+ }
