@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicios02</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: palevioletred;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var anoatual = prompt("Digita o Ano Atual:");
+        var anovelho = prompt("Ano de nascimento da pessoa mais velha:");
+        var anonovo = prompt("Ano de nascimento da pessoa mais nova:");
+
+        anoatual = parseInt(anoatual);
+        anovelho = parseInt(anovelho);
+        anonovo = parseInt(anonovo);
+
+        var idadeatualvelha = anoatual - anovelho
+        var idadeatualnovo = anoatual - anonovo
+        var dif = idadeatualvelha - idadeatualnovo
+
+        document.write("<h1>" + "A idade atual do mais velho é: ", idadeatualvelha ," anos","<br>",  "<br>" ,"</h1>")
+        document.write("<h1>" + "A idade atual do mais novo é: ", idadeatualnovo ," anos","<br>",  "<br>" ,"</h1>")
+        document.write("<h1>" + "A diferença de idade entre os dois é de: ", dif , " anos", "<br>",  "<br>" ,"</h1>")
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

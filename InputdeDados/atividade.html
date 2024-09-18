@@ -3,18 +3,21 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Altera Conteúdo ID</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script>
-        function tradutor(){
-            var x = document.getElementById("paragrafo");
-            x.innerHTML = "Hello!";
-        }
+        var num1 = prompt("numero 01:");
+        var num2 = prompt("numero 02:");
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+        var soma = num1 + num2;
+        document.write("A soma é: ", soma)
     </script>
 </head>
 <body>
-    <p id="paragrafo">Olá</p>
-    <button type="button" onclick="tradutor();">Translate</button>
+    
 </body>
 </html>
