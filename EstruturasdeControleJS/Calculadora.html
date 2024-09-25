@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simulação Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        *{
+            font-family: calibri;
+            font-size: 32px;
+        }
+        h2{
+            color: blue;
+        }
+        h1{
+            color: red;
+        }
+    </style>
+    <script>
+        num1 = parseFloat(prompt("Digite o primeiro numero:"))
+        num2 = parseFloat(prompt("Digite o segundo numero:"))
+        calculadora = prompt("Digite uma das oções de operação: multiplicação / divisão / soma / subtração / potenciação")
+        switch(calculadora){
+            case "multiplicação":
+                multi = num1 * num2
+                document.write("<h2>" + "Operação: " + num1 + " * " + num2 + "</h2>")
+                document.write("<h1>" + "O resultado da multiplicação é: " + multi + "</h1>");
+                break;
+            case "divisão":
+                div = num1 / num2
+                document.write("<h2>" + "Operação: " + num1 + " / " + num2 + "</h2>")
+                document.write("<h1>" + "O resultado da divisão é: " + div + "</h1>");
+                break;
+            case "soma":
+                soma = num1 + num2
+                document.write("<h2>" + "Operação: " + num1 + " + " + num2 + "</h2>")
+                document.write("<h1>" + "O resultado da soma é: " + soma + "</h1>");
+                break;
+            case "subtração":
+                sub = num1 - num2
+                document.write("<h2>" + "Operação: " + num1 + " - " + num2 + "</h2>")
+                document.write("<h1>" + "O resultado da subtração é: " + sub + "</h1>");
+                break;
+            case "potenciação":
+                pote = num1 ** num2
+                document.write("<h2>" + "Operação: " + num1 + " ^ " + num2 + "</h2>")
+                document.write("<h1>" + "O resultado da potenciação é: " + pote + "</h1>");
+                break;
+        }
+        
+        
+
+    </script>
+ </head>
+ <body>
+    
+ </body>
+ </html>

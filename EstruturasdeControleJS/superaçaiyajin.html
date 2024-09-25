@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Superaaiajin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+      function prompt1() {
+        tamanho = prompt(
+          "Escolha o tamanho do seu açai (coloque o número):\n\n1. Pequeno\n2. Médio\n3. Grande"
+        );
+        valortotal = 0;
+        if (tamanho == 1) {
+          valortotal = 10;
+          document.getElementById("text").innerHTML =
+            "<br>" + "O valor total do Pedido foi de: " + "R$ " + valortotal;
+        } else if (tamanho == 2) {
+          valortotal = 15;
+          document.getElementById("text").innerHTML =
+            "<br>" + "O valor total do Pedido foi de: " + "R$ " + valortotal;
+        } else if (tamanho == 3) {
+          valortotal = 20;
+          document.getElementById("text").innerHTML =
+            "<br>" + "O valor total do Pedido foi de: " + "R$ " + valortotal;
+        } else {
+          alert("O tamanho digitado não é valido");
+        }
+
+        document.getElementById("formapagamento").style.display = "block";
+      }
+      function prompt2() {
+        pagamento = prompt(
+          "Escolha a forma de pagamento (Coloque o número):\n\n1. Dinheiro\n2. Cartão"
+        );
+        if (pagamento == 1) {
+          dinheiro = parseFloat(prompt("Insira a quantidade paga: "));
+          if (dinheiro == valortotal) {
+            document.getElementById("text2").innerHTML =
+              "<br>" + "Pagamento Realizado com sucesso!";
+          } else if (dinheiro < valortotal) {
+            faltante = 10 - dinheiro;
+            document.getElementById("text2").innerHTML =
+              "<br>" + "Ainda falta: " + "R$" + faltante;
+          } else if (dinheiro > valortotal) {
+            troco = dinheiro - 10;
+            document.getElementById("text2").innerHTML =
+              "<br>" + "Seu troco é: " + "R$" + troco;
+          }
+        } else if (pagamento == 2) {
+          cartao = valortotal + valortotal * 0.05;
+          document.getElementById("text2").innerHTML =
+            "<br>" + "O valor total foi de: " + "R$" + cartao;
+        }
+        document.getElementById("pagar").style.display = "block";
+      }
+    </script>
+    <style>
+        img{
+            display: flex;
+            float: right;
+            width: 550px;
+            margin-right: 100px;
+            margin-top: 10px;
+            
+        }
+      body {
+        background-image: url(/EstruturasdeControleJS/fundo-suave-com-gradiente_23-2148967580.avif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+
+      }
+
+      #pagar {
+        display: none;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        background: green;
+        cursor: pointer;
+      }
+      p{
+        color: white;
+        margin-left: 110px;
+      }
+      * {
+        margin: 0px;
+        font-family: verdana;
+
+      }
+      h1 {
+        color: purple;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      th {
+        border: 1px solid white;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+      }
+      #text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+      }
+      #formapagamento {
+        display: none;
+      }
+      button {
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        background: purple;
+        cursor: pointer;
+        margin-left: 110px;
+      }
+      main{
+        background-color: violet;
+        border: 4px solid purple;
+        font-size: 30px;
+        
+      }
+      #main1{
+        font-family: cursive;
+        font-size: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1 id="main1">Super Açaiajin</h1>
+    </main>
+    <img src="/EstruturasdeControleJS/9d5eba0a63b976e3e8b7cd54f3e13e08.png" alt="">
+    <table>
+      <tr>
+        <th>Pequeno (P)</th>
+        <th>Médio (M)</th>
+        <th>Grande (G)</th>
+      </tr>
+      <tr>
+        <th>R$10,00</th>
+        <th>R$15,00</th>
+        <th>R$20,00</th>
+      </tr>
+    </table>
+    <br />
+    <button type="button" onclick="prompt1()" id="tam">
+      Escolha o Tamanho do seu açai
+    </button>
+
+    <p id="text"></p>
+    <br />
+    <button type="button" onclick="prompt2()" id="formapagamento">
+      Selecione a forma de pagamento
+    </button>
+    <p id="text2"></p>
+    <br />
+    <button
+      type="submit"
+      onclick="alert('Pagamento realizado com sucesso!')"
+      id="pagar"
+    >
+      Pagar Agora!
+    </button>
+  </body>
+</html>
