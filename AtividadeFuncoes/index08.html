@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carteira de Habilitação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        button{
+            padding: 15px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <button type="categoria" onclick="habilitacao()">Cheque os Veiculos Permitidos</button>
+    <script>
+        let hab = prompt("Digite a letra da sua habilitação: ")
+        let nome = prompt("Digite seu nome: ")
+
+        function habilitacao(){
+            if(hab == "A" || hab == "a"){
+                document.write("<h1>" + nome + " sua habilitação é do tipo A, ou seja você pode dirigir Motos de Triciclos." + "</h1>")
+            }
+            else if(hab == "B" || hab == "b"){
+                document.write("<h1>" + nome + " sua habilitação é do tipo B, ou seja você dirigir carros de passeio." + "</h1>")
+            }
+            else if(hab == "C" || hab == "c"){
+                document.write("<h1>" + nome + " sua habilitação é do tipo C, ou seja você pode dirigir veiculos de carga acima de 3,5 toneladas." + "</h1>")
+            }
+            else if(hab == "D" || hab == "d"){
+                document.write("<h1>" + nome + " sua habilitação é do tipo D, ou seja você pode dirigir veiculos com mais de 8 passageiros." + "</h1>")
+            }
+            else if(hab == "E" || hab == "e"){
+                document.write("<h1>" + nome + " sua habilitação é do tipo E, ou seja você pode dirigir veiculos com unidade aclopada acima de 6 toneladas." + "</h1>")
+            }
+            else{
+
+            }
+        }
+    </script>
+</body>
+</html>

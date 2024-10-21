@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Votar no Edinho</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #sim{
+            color: green;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #nao{
+            color: red;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+    <script>
+        function votar(){
+            let nome = prompt("Digite seu Nome: ");
+            let idade = prompt("Dgite sua Idade: ");
+            parseFloat(idade);
+
+            if(idade >= 18){
+                document.write("<h1 id='sim'>" + nome + " você já tem idade para votar!" + "</h1>")
+            }
+            else{
+            document.write("<h1 id='nao'>" + nome + " você não tem idade para votar ainda!" + "</h1>")
+            }
+        }
+        votar();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

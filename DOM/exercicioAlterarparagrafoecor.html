@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alterando Parágrafo e mudando cor (DOM)</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/DOM/_img/WhatsApp Image 2024-10-07 at 12.56.37.jpeg'>
+    <style>
+        *{
+            margin: 0;
+            font-family: arial;
+            font-size: 24px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <p>Clique no botão para alterar o conteúdo e a cor do parágrafo:</p>
+    <br>
+    <button onclick="myFunction()">Tente</button>
+    <br>
+    <br>
+    <p id="demo">Este é um parágrafo</p>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").textContent = "Olá, galera!";
+            document.getElementById("demo").style.color = "blue";
+        }
+    </script>
+    
+</body>
+</html>

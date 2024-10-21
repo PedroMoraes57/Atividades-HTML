@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculadora</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #SubmitButton{
+            padding: 15px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+   
+</head>
+<body>
+    <button id="SubmitButton">Calcular</button>
+    <script>
+        function calculadora(){
+        let num1 = prompt("Digite o Primeiro Número");
+        let num2 = prompt("Digite o segundo Número:");
+        
+        soma = Number(num1) + Number(num2)
+
+        sub = Number(num1) - Number(num2)
+
+        mult = Number(num1) * Number(num2)
+
+        div = Number(num1) / Number(num2)
+
+        porcen = soma * 0.252
+
+        media = (Number(num1) + Number(num2))/ 2
+
+        quadra = soma * soma
+
+        raiz = soma ** 0.5
+
+        document.write("A) ", num1 ," + ", num2, ": ", + soma + "<br>")
+        document.write("B) ", num1 ," - ", num2, ": ", + sub + "<br>")
+        document.write("C) ", num1 ," * ", num2, ": ", + mult + "<br>")
+        document.write("D) ", num1 ," / ", num2, ": ", + div + "<br>")
+        document.write("E) ", "25,2% do resultado da soma é: ", + porcen + "<br>")
+        document.write("F) ","A média é: ", num1 ," + ", num2,"/ 2", ": ", + media + "<br>")
+        document.write("G) ", "O resultado da soma ao quadrado é: " , + quadra + "<br>")
+        document.write("H) ","A raiz quadrada do resultado da soma é: ", + raiz + "<br>")
+
+
+        }
+        document.getElementById("SubmitButton").addEventListener("click", function(){
+
+        calculadora();
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.41);
+    height: 1400px;
+    width: 800px;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label{
+    color: white;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+    width: 700px;
+    height: 20px;
+    text-align: center;
+}

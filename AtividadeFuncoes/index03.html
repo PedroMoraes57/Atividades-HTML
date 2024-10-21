@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Celsius e Farenheit</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #Celsius{
+            padding: 15px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #Farenheit{
+            padding: 15px;
+            color: black;
+            background-color: lightblue;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="Celsius">Converter para farenheit </button>
+    <button id="Farenheit">Converter para Celsius</button>
+    
+    <script>
+        function convercelsius(){
+            let temp = prompt("Digite a temperatura em Graus Celsius: ")
+            parseFloat(temp)
+            far = (temp * 9/5) + 32
+            document.write("<p>" + "A temperatura convertida para farenheit é: ", far +"</p>")
+        }
+
+        function converfaren(){
+            let temp = prompt("Digite a temperatura em Farenheit: ")
+            parseFloat(temp)
+            cel = (temp - 32) * 5/9
+            document.write("<p>" + "A temperatura convertida para Celsius é:", cel + "</p>")
+        }
+        document.getElementById("Celsius").addEventListener("click", function(){
+
+        convercelsius();
+    })
+    document.getElementById("Farenheit").addEventListener("click", function(){
+
+        converfaren();
+    })
+
+    </script>
+</body>
+</html>

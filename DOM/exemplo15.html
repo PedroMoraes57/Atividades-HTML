@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="myDiv" style="width: 500px; height: 500px; background-color: lightblue; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 20px; text-align: center; ">
+        Passe o mouse sobre este elemento
+    </div>
+
+    <script>
+        let myDiv = document.getElementById("myDiv");
+        myDiv.onmouseover = function(){
+            myDiv.style.backgroundColor = "red";
+        };
+        myDiv.onmouseout = function(){
+            myDiv.style.backgroundColor = "lightblue"
+            myDiv.style.cursor = "pointer"
+        };
+    </script>
+</body>
+</html>

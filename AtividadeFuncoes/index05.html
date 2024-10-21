@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formula de Baskara</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <button id="Calcular">Clique aqui para calular a formula de Baskara</button>
+
+    <script>
+        function baskara(){
+            let a = prompt("Digite o valor de A para a formula de baskara: ")
+            let b = prompt("Digite o valor de B para a formula de baskara: ")
+            let c = prompt("Digite o valor de C para a formula de baskara: ")
+
+            let delta = b * b - 4 * a * c;
+            
+            let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+            let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            
+            document.write("O valor de x1 é: ", x1, "<br>")
+            document.write("O valor de x2 é: ", x2, "<br>")
+        }
+        document.getElementById("Calcular").addEventListener("click", function(){
+
+baskara();
+})
+    </script>
+
+</body>
+</html>

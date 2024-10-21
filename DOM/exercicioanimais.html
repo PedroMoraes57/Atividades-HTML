@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <style>
+        *{
+            margin: 0px;
+            text-align: center;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            color: green;
+            padding: 5px;
+            background-color: lightgreen;
+            border: 2px solid darkgreen;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h3{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            color: darkgreen;
+            font-size: 30px;
+        }
+        button{
+            color: darkgreen;
+            background-color: lightgreen;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid darkgreen;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 24px;           
+            font-weight: bold;
+            margin: 20px;
+        }
+        button:hover{
+            transform: scale(1.05);
+            background-color:rgb(116, 248, 116);
+            border: 5px solid darkgreen;
+            border-radius: 10px;
+
+        }
+        button:active{
+            transform: scale(0.8);
+            transition: all 0.5s;
+        }
+        
+        #img1{
+            display: none;
+            height: 400px;
+            width: 500px;
+            border: 2px solid darkgreen;
+        }
+        #img2{
+            display: none;
+            height: 600px;
+            width: 600px;
+            border: 2px solid darkgreen;
+        }
+        #img3{
+            display: none;
+            height: 400px;
+            width: 500px;
+            border: 2px solid darkgreen;
+        }
+        body{
+            background-color: rgb(191, 250, 191);
+        }
+        div{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            margin: auto;
+            margin: 10px;
+        }
+        .image-container{
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            border: none;
+            
+            
+        }
+        .image-container img{
+            transition: transform 0.3s ease-in-out /* Aumenta a escala para dar o efeito de zoom */
+            
+        }
+        .image-container:hover img{
+            transform: scale(1.2); /* Aumenta a escala para dar o efeito de zoom */
+            border: 2px solid darkgreen;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <h1>Alguns Animais fofos</h1>
+    <br>
+    <h3>Clique nos botões para ver os animais!</h3>
+    <br>
+    <br>
+    <div>
+    <figure>
+        <div class="image-container">
+        <img src="/DOM/_img/filhote-capa.jpg.jpg" alt="" id="img1">
+    </div>
+        <figcaption>
+        <button class="gatos" onclick="vergatinho()">Mostrar Gato</button>
+    </figcaption>
+    </figure>
+    <figure>
+        <div class="image-container">
+<img src="/DOM/_img/WhatsApp Image 2024-10-07 at 12.56.37.jpeg" alt="" id="img2">
+</div>
+<figcaption>
+    <button class="cachorros" onclick="vermendoim()">Mostrar Cachorro</button>
+</figcaption>
+</figure>
+<figure>
+    <div class="image-container">
+<img src="/DOM/_img/caracteristicas-cavalos-saudaveis-artigos-cursos-cpt.jpg" alt="" id="img3">
+</div>
+<figcaption>
+    <button class="cavalos" onclick="vercavalo()">Mostrar Cavalo</button>
+</figcaption>
+</figure>
+</div>
+    <script>
+    function vergatinho(){
+        document.getElementById("img1").style.display = "block"
+    }
+    function vermendoim(){
+        document.getElementById("img2").style.display = "block"
+    }
+    function vercavalo(){
+        document.getElementById("img3").style.display = "block"
+    }
+    </script>
+</body>
+</html>

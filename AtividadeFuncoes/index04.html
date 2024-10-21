@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Array 5 caracteres</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #aleatorio{
+            padding: 15px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="aleatorio">Clique aqui para começar</button>
+    
+    <script>
+        function array(){
+            caracter = [];
+            caracter.push(prompt("Digite o primeiro caracter: "))
+            caracter.push(prompt("Digite outro caracter: "))
+            caracter.push(prompt("Digite outro caracter: "))
+            caracter.push(prompt("Digite outro caracter: "))
+            caracter.push(prompt("Digite outro caracter: "))
+            
+            document.write("Os caracteres ordenados são: ", caracter.sort())
+        }
+        document.getElementById("aleatorio").addEventListener("click", function(){
+
+        array();
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de Jogadores</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/AtividadesValidacao/_css/style2.css'>
+    <script src='/AtividadesValidacao/_javascript/java2.js'></script>
+</head>
+<body>
+    <form action="/AtividadesValidacao/actiopage2.html" method="get" onsubmit="return validarFormulario()">
+        <h1>Cadastro de Jogadores</h1>
+        <br>
+        <label for="nome">Nome:</label>
+        <br>
+        <input type="text" name="nome" id="nome" required><br><br>
+
+        <label for="cpf">Endereço:</label>
+        <br>
+        <input type="text" name="endereco"  required><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <br>
+        <input type="text" name="cidade" required><br><br>
+
+        <label for="estado">Estado:</label>
+        <br>
+        <input type="text" name="estado" required><br><br>
+
+        <label for="idade">Idade:</label>
+        <br>
+        <input type="number" name="idade" id="idade" required><br><br>
+
+        <label for="celular">Celular:</label>
+        <br>
+        <input type="tel" name="celular" id="cel" required><br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="text" name="email" id="email" required><br><br>
+
+        <label for="chuteira">Tamanho da Chuteiro</label>
+        <br>
+        <input type="number" name="chuteira" required><br><br>
+
+        <label for="uniforme">Tamanho do Uniforme:</label>
+        <br>
+        <input class="radio" type="radio" name="Pp"> PP
+        <input class="radio" type="radio" name="p"> P
+        <input class="radio" type="radio" name="m"> M
+        <input class="radio" type="radio" name="g"> G
+        <input class="radio" type="radio" name="gg"> GG
+        <input class="radio" type="radio" name="extrag"> Extra G  
+        <br>
+        <br>
+        <label for="short">Tamanho do Short</label>
+        <input type="number" name="short" required><br><br>
+
+        <label for="luva">Tamanho da Luva</label>
+        <input type="number" name="luva" required><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" name="resetar" id="reset">
+</body>
+</html>

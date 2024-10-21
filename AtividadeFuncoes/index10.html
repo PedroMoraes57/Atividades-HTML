@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Aumento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        button{
+           padding: 15px;
+           color: white;
+           background-color: black;
+           border-radius: 10px;
+           cursor: pointer;
+           font-size: 20px;
+       }
+   </style>
+</head>
+<body>
+    <button id="Calcular" onclick="aumento()">Calcular Aumento</button>
+    <script>
+        function aumento(){
+            let nome = prompt("Digite seu nome: ");
+            let salario = prompt("Digite seu salário atual:")
+            let aument = prompt("Digite o aumento percentual que deseja receber: ")
+      
+
+            let percentual = Number(aument)/100
+            let novosalario = (Number(salario) * Number(percentual)) + Number(salario)  
+
+            document.write(nome + " o seu novo salário após a atualização de valor é: ", "R$ ", novosalario)
+        }
+    </script>
+</body>
+</html>

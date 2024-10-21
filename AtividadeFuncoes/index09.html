@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Combustivel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+         button{
+            padding: 15px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="Calcular" onclick="estimativa()">Clique aqui para calcular os gastos de sua viagem</button>
+    <script>
+        function estimativa(){
+            let distancia = prompt("Informe a distancia que vai ser percorrida em kilometros: ");
+            let litros = prompt("Informe a quantidade estimada de litros gasto");
+            let preco = prompt("Digite o preço unitario do combustivel utilizado:")
+
+            let custo = (Number(distancia)/Number(litros)) * Number(preco)
+
+            document.write("O custo estimado para sua viagem é de: ", "R$ ", custo)
+        }
+    </script>
+</body>
+</html>
