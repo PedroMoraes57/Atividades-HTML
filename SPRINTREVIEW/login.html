@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="/SPRINTREVIEW/login.css"> 
+    <script src="/SPRINTREVIEW/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="/SPRINTREVIEW/gremio_colorado.jpg" alt="">
+        <a href="home.html">
+            <h1 class="h1Cab">Home</h1>
+        </a>
+        <a href="esportes.html">
+            <h1 class="h1Cab">Eventos Esportivos</h1>
+        </a>
+        <a href="festas.html">
+            <h1 class="h1Cab">Festas</h1>
+        </a>
+        <button>Login/Cadastrar</button>
+    </header>
+
+    <div class="container">
+
+        <div class="form-section">
+
+            <h1>Fazer Login</h1>
+            <form action="#">
+                <input type="text" placeholder="Digite seu nome aqui" id="nome" oninput="inputNome()" required>
+                <span id="avisoNome">Digite um nome válido</span>
+                <input type="password" placeholder="Digite sua senha aqui" id="senha" oninput="inputSenha()" required>
+                <span id="avisoSenha">Digite uma senha válida</span>
+                <button type="submit" id="entrar">Entrar</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h1>Olá Aluno!</h1>
+            <h2>Cadastre-se com seus dados escolares para ter acesso ao site.</h2>
+            <button class="Cadastrar">Cadastrar-se</button>
+        </div>
+    </div>
+
+</body>
+</html>
